@@ -1,3 +1,6 @@
+# Environment variables with sensitive data
+.env
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
