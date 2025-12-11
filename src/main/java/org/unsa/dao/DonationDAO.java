@@ -1,8 +1,8 @@
 package org.unsa.dao;
 
-import models.Donation;
-import models.Donor;
-import utils.DBConnection;
+import org.unsa.models.Donation;
+import org.unsa.models.Donor;
+import org.unsa.utils.DBConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

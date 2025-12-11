@@ -1,8 +1,8 @@
 package org.unsa.dao;
 
-import models.Association;
-import models.User;
-import utils.DBConnection;
+import org.unsa.models.Association;
+import org.unsa.models.User;
+import org.unsa.utils.DBConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

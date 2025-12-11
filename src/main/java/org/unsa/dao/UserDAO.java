@@ -1,7 +1,7 @@
 package org.unsa.dao;
 
-import models.User;
-import utils.DBConnection;
+import org.unsa.models.User;
+import org.unsa.utils.DBConnection;
 
 import java.sql.*;
 

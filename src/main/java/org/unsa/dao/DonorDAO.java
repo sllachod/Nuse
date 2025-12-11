@@ -1,8 +1,8 @@
 package org.unsa.dao;
 
-import models.Donor;
-import models.User;
-import utils.DBConnection;
+import org.unsa.models.Donor;
+import org.unsa.models.User;
+import org.unsa.utils.DBConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 
 public class DonorDAO {
-    private dao.UserDAO userDAO;
+    private org.unsa.dao.UserDAO userDAO;
 
     public boolean addDonor(Donor donor) {
         String sqlQuery = "INSERT INTO Donor (name, address, user_id) VALUES (?, ?, ?)";

@@ -1,7 +1,7 @@
 package org.unsa.dao;
 
-import models.DonationCollection;
-import utils.DBConnection;
+import org.unsa.models.DonationCollection;
+import org.unsa.utils.DBConnection;
 
 import java.sql.*;
 import java.time.LocalDate;
