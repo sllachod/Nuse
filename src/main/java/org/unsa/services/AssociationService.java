@@ -30,7 +30,7 @@ public class AssociationService {
     }
 
     public ArrayList<Donation> getAvailableDonations() {
-        DonationDAO donationDAO = new dao.DonationDAO();
+        DonationDAO donationDAO = new org.unsa.dao.DonationDAO();
         return donationDAO.getAvailableDonations();
     }
 }

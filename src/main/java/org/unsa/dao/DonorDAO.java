@@ -29,7 +29,7 @@ public class DonorDAO {
     }
 
    public Donor getDonorByDonorId(int DonorId) {
-        dao.UserDAO userDAO = new dao.UserDAO();
+        org.unsa.dao.UserDAO userDAO = new org.unsa.dao.UserDAO();
         String sqlQuery = "SELECT * FROM Donor WHERE id = ?";
         Connection conn = DBConnection.getConnection();
         try {
@@ -48,7 +48,7 @@ public class DonorDAO {
     }
 
     public Donor getDonorByUsername(String username) {
-        userDAO = new dao.UserDAO();
+        userDAO = new org.unsa.dao.UserDAO();
         User user = userDAO.getUserByUsername(username);
         if (user == null) {
             return null;
