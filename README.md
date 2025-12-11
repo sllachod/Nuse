@@ -3,28 +3,27 @@
 Sistema Java para gestionar donaciones entre donantes y asociaciones benéficas.
 
 ## Requisitos Previos
-- Java 24+
+- Java 21+
 - Maven 3.9+
-- Docker Desktop
+- MySQL 8.0
 
 ## Inicio Rápido
 
-### 1. Levantar la Base de Datos
+### 1. Crear la Base de Datos
 ```powershell
-docker compose up -d
+# Crear la base de datos
+mysql -uroot -proot -e "CREATE DATABASE IF NOT EXISTS donation_db;"
+
+# Crear las tablas
+mysql -uroot -proot donation_db < src/main/resources/sql/schema.sql
 ```
 
-### 2. Crear las Tablas
-```powershell
-docker exec -i nuse-mysql mysql -unuse_user -pnuse_pass donation_db < src/main/resources/sql/schema.sql
-```
-
-### 3. Compilar
+### 2. Compilar
 ```powershell
 mvn clean install
 ```
 
-### 4. Ejecutar
+### 3. Ejecutar
 ```powershell
 mvn exec:java -Dexec.mainClass="org.unsa.Main"
 ```
