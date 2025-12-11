@@ -1,20 +1,28 @@
 package org.unsa;
 
+import org.unsa.utils.DBConnection;
 import javax.swing.*;
+import java.sql.Connection;
 
 public class Main {
     public static void main(String[] args) {
-        //TODO here test the database connection, missing DBConnection class
-//        try (Connection conn = DBConnection.getConnection()) {
-//            System.out.println("database connected successfully!");
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        // Test the database connection
+        try (Connection conn = DBConnection.getConnection()) {
+            if (conn != null) {
+                System.out.println("Database connected successfully!");
+            } else {
+                System.err.println("Failed to connect to database.");
+            }
+        } catch (Exception e) {
+            System.err.println("Database connection error:");
+            e.printStackTrace();
+        }
 
-        //TODO here launch the GUI, missing MainFrame class
+        // Launch the GUI
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
+                // TODO: Implement MainFrame for GUI
             }
         });
     }
