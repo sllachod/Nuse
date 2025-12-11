@@ -1,4 +1,4 @@
-package dao;
+package org.unsa.dao;
 
 import models.Donation;
 import models.Donor;

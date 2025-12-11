@@ -1,4 +1,4 @@
-package dao;
+package org.unsa.dao;
 
 import models.Association;
 import models.User;
