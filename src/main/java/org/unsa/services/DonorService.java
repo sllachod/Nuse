@@ -1,14 +1,14 @@
-package services;
+package org.unsa.services;
 
-import dao.DonorDAO;
-import models.Donor;
-import models.User;
+import org.unsa.dao.DonorDAO;
+import org.unsa.models.Donor;
+import org.unsa.models.User;
 
 import java.sql.SQLIntegrityConstraintViolationException;
 
 public class DonorService {
     private DonorDAO donorDAO = new DonorDAO();
-    private services.UserService userService = new services.UserService();
+    private org.unsa.services.UserService userService = new org.unsa.services.UserService();
 
     public Donor registerDonorUser(String username, String password, String email, String name, String address) throws SQLIntegrityConstraintViolationException {
         try {

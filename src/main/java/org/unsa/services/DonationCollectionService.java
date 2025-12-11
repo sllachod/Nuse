@@ -1,7 +1,7 @@
-package services;
+package org.unsa.services;
 
-import dao.DonationCollectionDAO;
-import models.DonationCollection;
+import org.unsa.dao.DonationCollectionDAO;
+import org.unsa.models.DonationCollection;
 
 import java.sql.SQLException;
 import java.util.ArrayList;

@@ -1,8 +1,8 @@
-package services;
+package org.unsa.services;
 
-import dao.DonationDAO;
-import models.Donation;
-import models.Donor;
+import org.unsa.dao.DonationDAO;
+import org.unsa.models.Donation;
+import org.unsa.models.Donor;
 
 import java.util.ArrayList;
 

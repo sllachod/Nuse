@@ -1,11 +1,11 @@
-package services;
+package org.unsa.services;
 
-import dao.AssociationDAO;
-import dao.DonorDAO;
-import dao.UserDAO;
-import models.Association;
-import models.Donor;
-import models.User;
+import org.unsa.dao.AssociationDAO;
+import org.unsa.dao.DonorDAO;
+import org.unsa.dao.UserDAO;
+import org.unsa.models.Association;
+import org.unsa.models.Donor;
+import org.unsa.models.User;
 
 import java.sql.SQLIntegrityConstraintViolationException;
 

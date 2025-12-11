@@ -1,16 +1,16 @@
-package services;
+package org.unsa.services;
 
-import dao.AssociationDAO;
-import dao.DonationDAO;
-import models.Association;
-import models.Donation;
-import models.User;
+import org.unsa.dao.AssociationDAO;
+import org.unsa.dao.DonationDAO;
+import org.unsa.models.Association;
+import org.unsa.models.Donation;
+import org.unsa.models.User;
 
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.ArrayList;
 
 public class AssociationService {
-    private services.UserService userService = new services.UserService();
+    private org.unsa.services.UserService userService = new org.unsa.services.UserService();
 
     public Association registerAssociationUser(String username, String password, String email, String name, String location) throws SQLIntegrityConstraintViolationException {
         try {
