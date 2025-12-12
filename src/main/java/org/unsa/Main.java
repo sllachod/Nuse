@@ -1,12 +1,12 @@
 package org.unsa;
 
 import org.unsa.utils.DBConnection;
+import org.unsa.ui.MainFrame;
 import javax.swing.*;
 import java.sql.Connection;
 
 public class Main {
     public static void main(String[] args) {
-        // Test the database connection
         try (Connection conn = DBConnection.getConnection()) {
             if (conn != null) {
                 System.out.println("Database connected successfully!");
@@ -18,11 +18,11 @@ public class Main {
             e.printStackTrace();
         }
 
-        // Launch the GUI
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                // TODO: Implement MainFrame for GUI
+                MainFrame mainFrame = new MainFrame();
+                mainFrame.setVisible(true);
             }
         });
     }
